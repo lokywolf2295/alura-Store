@@ -1,0 +1,44 @@
+:root {
+	--white1: #f1f1f1;
+	--white2: #f2f5f7;
+	--gray1: #ccc;
+	--gray2: #9799a6;
+	--gray3: #324c64;
+	--red: #ff8080;
+	--violet: #ad85bf;
+	--ligthblue1: #0099ff;
+	--ligthblue2: #5e9edc;
+	--green1: #00cc99;
+	--green2: #4dba7a;
+	--black: #000;
+	--fuente: Arial, Helvetica, sans-serif;
+  }
+
+.app {
+    background: var(--white1);
+    font-family: var(--fuente);
+    display: grid;
+    /*definimos las areas a utilizar en el grid*/
+    grid-template-areas: 
+    "encabezado"
+    "contenido"
+    "rodapie";
+    /*definimos la distrubucion de las areas*/
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto; /*50px para el encabezado, 100vh para contenido y auto para  rodapie*/
+}
+
+.encabezado {
+    background: var(--green1);
+    grid-area: encabezado;
+}
+
+.contenido {
+    background: var(--red);
+    grid-area: contenido;
+}
+
+.rodapie { 
+    background: var(--ligthblue1);
+    grid-area: rodapie;
+}
