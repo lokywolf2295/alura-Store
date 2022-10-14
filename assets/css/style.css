@@ -29,16 +29,16 @@
 }
 
 .encabezado {
-    background: var(--green1);
+    /* background: var(--green1); */
     grid-area: encabezado;
 }
 
 .contenido {
-    background: var(--red);
+    /* background: var(--red); */
     grid-area: contenido;
 }
 
 .rodapie { 
-    background: var(--ligthblue1);
+    /* background: var(--ligthblue1); */
     grid-area: rodapie;
 }
