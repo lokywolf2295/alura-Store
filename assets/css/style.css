@@ -25,20 +25,34 @@
     "rodapie";
     /*definimos la distrubucion de las areas*/
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto; /*50px para el encabezado, 100vh para contenido y auto para  rodapie*/
+    grid-template-rows: 50px auto auto; 
 }
 
 .encabezado {
-    /* background: var(--green1); */
     grid-area: encabezado;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.menu__link{
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link:active {
+    border-bottom: 2px solid #0073e6;
 }
 
 .contenido {
-    /* background: var(--red); */
     grid-area: contenido;
+    padding: 0 2rem;
 }
 
 .rodapie { 
-    /* background: var(--ligthblue1); */
     grid-area: rodapie;
+    background: #fdfdfd;
+    color: #333333;
+    padding: 1rem;
+    text-align: center;
 }
